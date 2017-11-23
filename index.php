@@ -177,6 +177,9 @@
 			<h4>2016 - 2017 Фабрика мягкой мебели "САПСАН"</h4>
 		</div>
 	</section>
+
+	<p>Изменения на ветке MASTER</p>
+
 </body>
 
 <script src="libs/jquery/jquery-3.2.1.min.js"></script>
