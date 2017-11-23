@@ -1,0 +1,40 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+header{
+	background-image: url(img/header.jpg);
+	height: 1278px;
+	background-size: cover;
+	overflow: hidden;
+}
+
+nav{
+	position: relative;
+	background-color: rgba(56, 52, 89, 0.43);
+	transition: 1s ease;
+	height: 100px;
+}
+
+.fixed{
+	width: 100%;
+	position: fixed;
+	background-color: rgba(47, 47, 47, 0.80);
+}
+
+nav ul{
+	text-align: center;
+	color: white;
+	margin: 0;
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	margin-top: -8px;
+	padding: 0;
+}
+
+nav ul li{
+	display: inline-block;
+	padding: 0 20px;
+}

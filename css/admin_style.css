@@ -1,0 +1,450 @@
+@import url("../fonts/fonts.css");
+body {
+  display: none;
+  background-color: #0a0b0c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-input-placeholder {
+  color: #fff;
+  font-family: SFThin;
+}
+
+:-ms-input-placeholder {
+  color: #fff;
+  font-family: SFThin;
+}
+
+::-ms-input-placeholder {
+  color: #fff;
+  font-family: SFThin;
+}
+
+::placeholder {
+  color: #fff;
+  font-family: SFThin;
+}
+
+.admin_enter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.admin_enter .container {
+  max-width: 320px;
+  padding: 0 15px;
+}
+
+.admin_enter .container .admin_enter__modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.admin_enter .container .admin_enter__modal .admin_enter_logo {
+  width: 100%;
+  text-align: center;
+}
+
+.admin_enter .container .admin_enter__modal .admin_enter_logo img {
+  width: 100px;
+}
+
+.admin_enter .container .admin_enter__modal .admin_enter__title {
+  font-family: monospace;
+  color: #14af14;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.admin_enter .container .admin_enter__modal .admin_enter__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  max-width: 320px;
+  margin: auto;
+  padding: 40px;
+  border: 1px solid #dadada;
+  border-radius: 3px;
+}
+
+.admin_enter .container .admin_enter__modal .admin_enter__form input {
+  border: 1px solid #dadada;
+  padding: 15px;
+  border-radius: 3px;
+  outline: none;
+  color: #14af14;
+  font-size: 15px;
+  background-color: #070808;
+  font-family: monospace;
+}
+
+.admin_enter .container .admin_enter__modal .admin_enter__form input:nth-of-type(2) {
+  margin-top: 10px;
+}
+
+.admin_enter .container .admin_enter__modal .admin_enter__form input:-webkit-autofill {
+  -webkit-box-shadow: inset 0 0 0 50px #131714 !important;
+  -webkit-text-fill-color: #999 !important;
+  color: #999 !important;
+  background-color: #faffbd !important;
+}
+
+.admin_enter .container .admin_enter__modal .admin_enter__form .admin_enter__controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.admin_enter .container .admin_enter__modal .admin_enter__form .admin_enter__forgot_pass .checkbox {
+  display: none;
+}
+
+.admin_enter .container .admin_enter__modal .admin_enter__form .admin_enter__forgot_pass .checkbox-custom {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #14af14;
+  border-radius: 3px;
+  position: relative;
+}
+
+.admin_enter .container .admin_enter__modal .admin_enter__form .admin_enter__forgot_pass .checkbox-custom,
+.admin_enter .container .admin_enter__modal .admin_enter__form .admin_enter__forgot_pass .label {
+  display: inline-block;
+  vertical-align: middle;
+  font-family: monospace;
+  color: #14af14;
+  font-size: 15px;
+}
+
+.admin_enter .container .admin_enter__modal .admin_enter__form .admin_enter__forgot_pass .checkbox:checked + .checkbox-custom::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  bottom: 2px;
+  left: 2px;
+  background: #14af14;
+  border-radius: 3px;
+}
+
+.admin_enter .container .admin_enter__modal .admin_enter__form a {
+  text-decoration: none;
+  font-family: monospace;
+  color: #14af14;
+  font-size: 15px;
+}
+
+.admin_enter .container .admin_enter_success {
+  display: none;
+}
+
+.admin_enter .container .admin_enter_success .admin_enter__form {
+  width: 200px;
+  padding: 40px;
+}
+
+.admin_enter .container .admin_enter_success .admin_enter__form .admin_enter__controls {
+  margin-top: 0;
+}
+
+.admin_enter .container .admin_enter_success .admin_enter__form .admin_enter__controls a {
+  display: block;
+}
+
+.admin_panel .admin_panel__container {
+  max-width: 768px;
+  margin: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.admin_panel .admin_panel__container .admin_panel__flex {
+  width: 100%;
+}
+
+.admin_panel .admin_panel__container .admin_panel__flex .admin_panel__tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.admin_panel .admin_panel__container .admin_panel__flex .admin_panel__tabs .admin_panel__tabs__tab {
+  margin-top: 67px;
+}
+
+.admin_panel .admin_panel__container .admin_panel__flex .admin_panel__tabs .admin_panel__tabs__tab p a {
+  color: #fff;
+  font-weight: 100;
+  font-family: SFThin;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.admin_panel .admin_panel__container .admin_panel__flex .admin_panel__tabs_container {
+  margin-top: 67px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.admin_panel .admin_panel__container .admin_panel__flex .admin_panel__tabs_container .admin_panel__tab_container_wrap {
+  display: none;
+  width: 100%;
+}
+
+.admin_panel .admin_panel__container .admin_panel__flex .admin_panel__tabs_container .active {
+  display: block;
+}
+
+.admin_panel .admin_panel__container .admin_panel__flex .admin_panel__tabs_container .active .admin_panel__tab_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+}
+
+.admin_panel .admin_panel__container .admin_panel__flex .admin_panel__tabs_container .active .admin_panel__tab_container .desc_parameters .active_parameters {
+  margin-bottom: 23px !important;
+}
+
+.admin_panel .admin_panel__container .admin_panel__flex .admin_panel__tabs_container .active .admin_panel__tab_container .desc_parameters .desc_parameters__wrap_container {
+  display: none;
+}
+
+.admin_panel .admin_panel__container .admin_panel__flex .admin_panel__tabs_container .active .admin_panel__tab_container .desc_parameters .picture_container a {
+  width: 100%;
+}
+
+.admin_panel .admin_panel__container .admin_panel__flex .admin_panel__tabs_container .active .admin_panel__tab_container .desc_parameters .desc_parameters__parameters {
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.admin_panel .admin_panel__container .admin_panel__flex .admin_panel__tabs_container .active .admin_panel__tab_container .desc_parameters .desc_parameters__parameters p {
+  color: #fff;
+  font-family: SFThin;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+.admin_panel .admin_panel__container .admin_panel__flex .admin_panel__tabs_container .active .admin_panel__tab_container .value_parameters {
+  width: 270px;
+}
+
+.admin_panel .admin_panel__container .admin_panel__flex .admin_panel__tabs_container .active .admin_panel__tab_container .value_parameters .active_parameters {
+  margin-bottom: 16px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.admin_panel .admin_panel__container .admin_panel__flex .admin_panel__tabs_container .active .admin_panel__tab_container .value_parameters .active_parameters input {
+  width: 80%;
+}
+
+.admin_panel .admin_panel__container .admin_panel__flex .admin_panel__tabs_container .active .admin_panel__tab_container .value_parameters .active_parameters a {
+  display: block;
+  width: 20%;
+  margin-left: 10px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #fff !important;
+  color: black !important;
+  font-family: SFTRegular !important;
+}
+
+.admin_panel .admin_panel__container .admin_panel__flex .admin_panel__tabs_container .active .admin_panel__tab_container .value_parameters .value_parameters__wrap_container {
+  display: none;
+}
+
+.admin_panel .admin_panel__container .admin_panel__flex .admin_panel__tabs_container .active .admin_panel__tab_container .value_parameters .text {
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.admin_panel .admin_panel__container .admin_panel__flex .admin_panel__tabs_container .active .admin_panel__tab_container .value_parameters .text p {
+  color: #fff;
+  font-family: SFThin;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+.admin_panel .admin_panel__container .admin_panel__flex .admin_panel__tabs_container .active .admin_panel__tab_container .value_parameters .value_parameters__parameters {
+  margin-bottom: 10px;
+}
+
+.admin_panel .admin_panel__container .admin_panel__flex .admin_panel__tabs_container .active .admin_panel__tab_container .value_parameters .value_parameters__parameters input, .admin_panel .admin_panel__container .admin_panel__flex .admin_panel__tabs_container .active .admin_panel__tab_container .value_parameters .value_parameters__parameters select, .admin_panel .admin_panel__container .admin_panel__flex .admin_panel__tabs_container .active .admin_panel__tab_container .value_parameters .value_parameters__parameters a {
+  padding: 10px 5px;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  font-family: SFThin;
+  letter-spacing: 1px;
+}
+
+.admin_panel .admin_panel__container .admin_panel__flex .admin_panel__tabs_container .active .admin_panel__tab_container .value_parameters .w100 input {
+  width: calc(100% - 13px);
+}
+
+.admin_panel .admin_panel__container .admin_panel__flex .admin_panel__tabs_container .active .admin_panel__tab_container .value_parameters .w100 select {
+  width: 100%;
+}
+
+.admin_panel .admin_panel__container .admin_panel__flex .admin_panel__tabs_container .active .admin_panel__tab_container .value_parameters .w100 select option {
+  background-color: #0a0b0c;
+}
+
+.admin_panel .admin_panel__container .admin_panel__flex .admin_panel__tabs_container .active .admin_panel__tab_container .value_parameters .w50 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.admin_panel .admin_panel__container .admin_panel__flex .admin_panel__tabs_container .active .admin_panel__tab_container .value_parameters .w50 input {
+  width: calc(50% - 16px);
+}
+
+.admin_panel .admin_panel__container .admin_panel__flex .admin_panel__tabs_container .active .admin_panel__tab_container .value_parameters .w33 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.admin_panel .admin_panel__container .admin_panel__flex .admin_panel__tabs_container .active .admin_panel__tab_container .value_parameters .w33 input {
+  width: calc(33.33% - 17px);
+}
+
+.admin_panel .admin_panel__container .admin_panel__flex .admin_panel__tabs_container .active .admin_panel__tab_container .value_parameters .button .edit_picture {
+  width: 100% !important;
+}
+
+.admin_panel .admin_panel__container .admin_panel__flex .admin_panel__tabs_container .active .admin_panel__tab_container .value_parameters .button .contain_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.admin_panel .admin_panel__container .admin_panel__flex .admin_panel__tabs_container .active .admin_panel__tab_container .value_parameters .button .contain_block input {
+  width: calc(50% - 17px);
+  text-align: center;
+}
+
+.admin_panel .admin_panel__container .admin_panel__flex .admin_panel__tabs_container .active .admin_panel__tab_container .value_parameters .button .contain_block a {
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  width: calc(50% - 17px);
+  background-color: #fff;
+  color: #0a0b0c;
+  font-family: SFTRegular;
+}
+
+.admin_panel .admin_panel__container .admin_panel__flex .admin_panel__tabs_container .active .admin_panel__tab_container .admin_panel__tab_container__submit_form {
+  display: block;
+  padding: 10px 5px;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  font-family: SFTRegular;
+  letter-spacing: 1px;
+  text-decoration: none;
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  -webkit-transition: 0.4s cubic-bezier(0.71, 0.63, 0.36, 1);
+  -o-transition: 0.4s cubic-bezier(0.71, 0.63, 0.36, 1);
+  transition: 0.4s cubic-bezier(0.71, 0.63, 0.36, 1);
+}
+
+.admin_panel .admin_panel__container .admin_panel__flex .admin_panel__tabs_container .active .admin_panel__tab_container .admin_panel__tab_container__submit_form:hover {
+  color: #0a0b0c;
+  background-color: #fff;
+}
